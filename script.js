@@ -1,13 +1,8 @@
-var myNav = document.getElementById('navbartext');
-window.onscroll = function () {
-    "use strict";
-    if ((document.documentElement.scrollTop >= 730 && document.documentElement.scrollTop<=1450)) {
-        //myNav.classList.remove("nav-transparent");
-        myNav.classList.add("color-blue-mynav");
-        myNav.classList.remove("color-white-mynav");
-    }
-    else {
-        myNav.classList.remove("color-blue-mynav");
-        myNav.classList.add("color-white-mynav");
-    }
-};
+const titleText = document.querySelector(".blink");
+var typed = new Typed('.typing', {
+    strings: ["Android Developer.", "Java SE Developer.","Confused Learner.","HTML.CSS.JS"],
+    loop: true,
+    typeSpeed: 80,
+    backSpeed: 40
+  });
+  AOS.init();
