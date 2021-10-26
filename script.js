@@ -1,8 +1,13 @@
-const titleText = document.querySelector(".blink");
-var typed = new Typed('.typing', {
-    strings: ["Android Developer.", "Java SE Developer.","Confused Learner.","HTML.CSS.JS"],
-    loop: true,
-    typeSpeed: 80,
-    backSpeed: 40
-  });
-  AOS.init();
+var myNav = document.getElementById('navbartext');
+window.onscroll = function () {
+    "use strict";
+    console.log(document.documentElement.scrollTop)
+    if (document.documentElement.scrollTop >= 725 && document.documentElement.scrollTop <= 1490) {
+        myNav.classList.add("text-color-blue");
+        myNav.classList.remove("text-color-white");
+    }
+    else {
+        myNav.classList.add("text-color-white");
+        myNav.classList.remove("text-color-blue");
+    }
+};
